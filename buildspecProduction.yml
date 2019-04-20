@@ -8,7 +8,6 @@ phases:
   build:
     commands:
       - npm run build
-      - rm 
       - echo "s3://${FRONTEND_PRODUCTION_BUCKET}/"
       - aws s3 rm --recursive "s3://${FRONTEND_PRODUCTION_BUCKET}/"
 # Include only the files required for your application to run.
